@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Header -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="New Task"
+                android:textColor="#79D279"
+
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- Calendar -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose task date:"
+                android:textColor="#5A5A5A"
+                android:textSize="12sp" />
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!-- Task Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Give task a name:"
+                android:textColor="#5A5A5A"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/taskNameTextView"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="Give your task a short name..."
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <Button
+                android:id="@+id/createBtn"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="#79D279"
+                android:text="Create Task"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

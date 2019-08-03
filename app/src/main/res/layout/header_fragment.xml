@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Header -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="Change Header"
+                android:textColor="#5A5A5A"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- Choices -->
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:columnCount="2">
+                <!-- Default -->
+                <RelativeLayout
+                    android:id="@+id/defaultBtn"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:id="@+id/defaultimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/default_ico" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/defaultimg"
+                        android:layout_centerHorizontal="true"
+                        android:text="Default" />
+                </RelativeLayout>
+                <!-- Ember Spark -->
+                <RelativeLayout
+                    android:id="@+id/emberBtn"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:id="@+id/emberimg"
+                        android:layout_width="130dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/ember_spark_ico" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/emberimg"
+                        android:layout_centerHorizontal="true"
+                        android:text="Ember Spark" />
+                </RelativeLayout>
+                <!-- Persian Lounge -->
+                <RelativeLayout
+                    android:id="@+id/persianBtn"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:id="@+id/persianimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/persian_lounge_ico" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/persianimg"
+                        android:layout_centerHorizontal="true"
+                        android:text="Persian Lounge" />
+                </RelativeLayout>
+                <!-- Phase -->
+                <RelativeLayout
+                    android:id="@+id/phaseBtn"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:id="@+id/phaseimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/phase_ico" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/phaseimg"
+                        android:layout_centerHorizontal="true"
+                        android:text="Phase" />
+                </RelativeLayout>
+                <!-- Spectrum -->
+                <RelativeLayout
+                    android:id="@+id/spectrumBtn"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:id="@+id/spectrumimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/spectrum_ico" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spectrumimg"
+                        android:layout_centerHorizontal="true"
+                        android:text="Spectrum" />
+                </RelativeLayout>
+                <!-- Stealth -->
+                <RelativeLayout
+                    android:id="@+id/stealthBtn"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:id="@+id/stealthimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/stealth_ico" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/stealthimg"
+                        android:layout_centerHorizontal="true"
+                        android:text="Stealth" />
+                </RelativeLayout>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

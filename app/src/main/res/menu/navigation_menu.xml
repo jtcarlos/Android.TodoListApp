@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Your Tasks">
+        <menu>
+            <group
+                android:id="@+id/menu_tasks"
+                android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/menu_today"
+                    android:icon="@drawable/ic_bulb"
+                    android:title="Today's Tasks" />
+                <item
+                    android:id="@+id/menu_upcoming"
+                    android:icon="@drawable/ic_next"
+                    android:title="Upcoming Tasks" />
+                <item
+                    android:id="@+id/menu_overdue"
+                    android:icon="@drawable/ic_clock"
+                    android:title="Overdue Tasks" />
+                <item
+                    android:id="@+id/menu_create"
+                    android:icon="@drawable/ic_create"
+                    android:title="Create New Task" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="App Options">
+        <menu>
+            <group
+                android:id="@+id/menu_app"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menu_header"
+                    android:icon="@drawable/ic_settings"
+                    android:title="Change Header" />
+                <item
+                    android:id="@+id/menu_about"
+                    android:icon="@drawable/ic_document"
+                    android:title="About Application" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
